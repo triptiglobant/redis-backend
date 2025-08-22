@@ -64,4 +64,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'redis'
+gem "redis"

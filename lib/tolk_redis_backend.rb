@@ -1,7 +1,7 @@
 # lib/tolk_redis_backend.rb
 
 class TolkRedisBackend
-  PREFIX = 'i18n'.freeze
+  PREFIX = "i18n".freeze
 
   def initialize
     redis_url = ENV.fetch("REDIS_URL") rescue "redis://localhost:6379/1"
@@ -21,7 +21,7 @@ class TolkRedisBackend
   end
 
   def keys
-    @redis.keys with_prefix('*')
+    @redis.keys with_prefix("*")
   end
 
   def clear_old_entries
